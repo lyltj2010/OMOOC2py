@@ -1,19 +1,8 @@
 {
-    "author": "yongle<lyuyongle@gmail.com>",
-    "description": "yongle学Python",
-    "extension": null,
-    "generator": "site",
-
     "plugins": ["disqus"],
-
-    "pluginsConfig": 
-    	{  
-        "disqus": 
-        	{
+    "pluginsConfig": {
+        "disqus": {
             "shortName": "le-le"
-       		}
-  		},
-
-  	"title":"yongle在OMOOC2py",
-  	"variables":{}
+        }
+    }  
 }
