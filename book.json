@@ -1,15 +1,21 @@
 {
-    "title": "乐乐的python学习笔记",
-    "version": "15.9.18,2020",
-    "description": "记录学习python过程中的磕磕绊绊",
-    "author": "yongle",
+    "author": "yongle<lyuyongle@gmail.com>",
+    "description": "yongle学Python",
+    "extension": null,
+    "generator": "site",
 
-    "plugins": [
-        "disqus",  "quiz", "katex"
-    ],
-    "pluginsConfig": {
-        "disqus": {
+    "plugins": ["disqus"],
+
+    "pluginsConfig": 
+    	{  
+        "disqus": 
+        	{
             "shortName": "le-le"
-        },
-        }
+       		}
+
+  		},
+
+
+  	"title":"yongle在OMOOC2py",
+  	"variables":{}
 }
