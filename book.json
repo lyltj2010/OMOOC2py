@@ -11,22 +11,5 @@
         "disqus": {
             "shortName": "le-le"
         },
-
-        "quiz": {
-            "labels": {
-                "showCorrect"       : "显示正确答案",
-                "check"             : "确认",
-                "showExplanation"   : "查看解释",
-                "explanationHeader" : "Explanation"
-            },
-            "text": {
-                "noChosen"    : "",
-                "incomplete"  : ""
-            },
-            "buttons": {
-                "showCorrect"       : true, 
-                "showExplanation"   : true
-            }
         }
-    }
 }
