@@ -29,7 +29,7 @@ Gitbook语法是基于markdown格式,为了便于便捷记录学习历程，非�
 【简书】(http://jianshu.io)
 
 ##插入图片
-！[小李](http://upload-images.jianshu.io/upload_images/310441-9c2baea633a0dffe.jpg)
+![最爱小李](http://upload-images.jianshu.io/upload_images/310441-9c2baea633a0dffe.jpg)
 
 ##引用(>)
 > 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
