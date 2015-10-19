@@ -15,7 +15,19 @@
 - 在下面的Trusted Domains中，添加 gitbook.com， gitbooks.io   （一行一条网址，不用加www）
 
 ####2.配置book.json文件
-## 使用
+新建book.json文件，内容如下：
+```
+{
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "改成你在disqus上的shortname"
+        }
+    }  
+}
+```
+如果和github的仓库联动的话，把这个文件放在仓库根目录下就万事大吉了，是也乎。不联动的情况没有折腾，应该放在Files Tree里就行，无暇考证。
 
 ## 体验
+别人的回复可以收到邮件提醒，多贴心，不用刷，哈哈。
 配置成功的时候，心情可以用**"是也乎"**来表达。
