@@ -20,6 +20,9 @@ biubiu，搞定啦。
 - 卸载
 ````pip uninstall some-package-name````
 
+当然，还可以任性地把Ipython安装了。
+````pip install ipython````
+
 ####不够给力？
 给你个wiki
 [PIP](https://en.wikipedia.org/wiki/Pip_(package_manager))
