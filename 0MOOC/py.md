@@ -9,18 +9,16 @@
 官网上给的安装代码[get-pip.py](https://bootstrap.pypa.io/get-pip.py)，拷贝来建立一个py文件。
 在cmd输入如下代码
 
-''''
-python get-pip.py
-''''
+````python get-pip.py````
 
 biubiu，搞定啦。
 
 ####安装第三方模块
 之后就可以任性安装卸载其他模块。
 - 安装
-''''pip install some-package-name''''
+````pip install some-package-name````
 - 卸载
-''''pip uninstall some-package-name''''
+````pip uninstall some-package-name````
 
 ####不够给力？
 给你个wiki
