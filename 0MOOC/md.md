@@ -1,10 +1,10 @@
 # Markdown 私人教程
 
 ## 背景
-Gitbook语法是基于markdown格式,为了便于便捷记录学习历程，非常有必要了解Markdown语法的基本知识。第一次是在开智群听阳老提起的markdown，之后再简书上发现markdown和富文本这两种格式。Markdown纯文本编辑的确很cool。
+Gitbook语法是基于markdown格式,为了便于便捷记录学习历程，非常有必要了解Markdown语法的基本知识。第一次是在开智群听阳老提起的markdown，之后在简书上发现markdown和富文本这两种格式。Markdown纯文本编辑的确很cool。
 
 ## 基本语法
-类似与Word等文字编辑软件，格式的调整通过界面操作，而markdown是通过约定的符号表示，能使人更专注于内容，提升效率。
+类似与Word等文字编辑软件，格式的调整通过界面操作，而markdown是通过约定的符号表示，能使人更专注于内容，提升效率。据说还可以嵌套到html什么的，IT盲表示感觉很厉害啊。
 
 # 大标题(#)
 
