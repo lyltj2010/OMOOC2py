@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [教学反转](0MOOC/README.md)
    * [Markdown](0MOOC/md.md)
+   * DISQUS
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
