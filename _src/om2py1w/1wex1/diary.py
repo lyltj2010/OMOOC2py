@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 import sys
+
+fr = open('diary.txt','r')
+for line in fr:
+	print line,
+fr.close()
+
 script, contents = sys.argv
-f = open('diary.txt','a')
-f.write(contents+'\n')
-f.close()
+fw = open('diary.txt','a+')
+fw.write(contents+'\n')
+fw.close()
