@@ -32,3 +32,5 @@ biubiu，搞定啦。
 在cmd或powershell打开ipython时会出现一堆提示，这是安装一下pyreadline。
 ````pip install pyreadline````    
 之后就可以任性地用Ipython。    
+- 命令行：可以直接交互
+- 脚本：可以直接````run hello.py````,在也不用反复退出了。
