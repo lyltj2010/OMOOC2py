@@ -17,5 +17,10 @@ Windows党先用Powershell吧。
 - cd\ :返回跟目录
 - dir/ls ：列举文件
 - rm ：remove
-### 体验
-界面设置的跟黑客帝国似的，呵呵。
+
+###问题
+如何在powershell中运行sublime(如命令subl)？
+
+### 其他
+####在git bash中运行sublime  
+[Udacity教程](https://www.udacity.com/wiki/ud775/sublime)
