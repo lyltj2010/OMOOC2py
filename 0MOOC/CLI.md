@@ -11,5 +11,7 @@ Windows党先用Powershell吧。
 - 兼容cmd：shell里命令叫cmdlet，同时为cmd命令起了alias，可以get-alias查看。
 - [入门教程](http://www.cnblogs.com/chsword/archive/2011/10/17/PowerShell_2.html)
 
+###常用命令
+
 ### 体验
 界面设置的跟黑客帝国似的，呵呵。
