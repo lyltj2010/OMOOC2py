@@ -16,6 +16,6 @@ Windows党先用Powershell吧。
 - cd.. ：返回上一级
 - cd\ :返回跟目录
 - dir/ls ：列举文件
-- 
+- rm ：remove
 ### 体验
 界面设置的跟黑客帝国似的，呵呵。
