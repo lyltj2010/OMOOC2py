@@ -30,4 +30,5 @@ biubiu，搞定啦。
 
 ````pip install ipython````    
 在cmd或powershell打开ipython时会出现一堆提示，这是安装一下pyreadline。
-````pip install pyreadline````
+````pip install pyreadline````    
+之后就可以任性地用Ipython。    
