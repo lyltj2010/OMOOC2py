@@ -12,9 +12,10 @@ Windows党先用Powershell吧。
 - [入门教程](http://www.cnblogs.com/chsword/archive/2011/10/17/PowerShell_2.html)
 
 ###常用命令
-- cd
-- cd..
-- dir/ls
+- cd ：目录操作(利用tab补全)
+- cd.. ：返回上一级
+- cd\ :返回跟目录
+- dir/ls：列举文件
 - 
 ### 体验
 界面设置的跟黑客帝国似的，呵呵。
