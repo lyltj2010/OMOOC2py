@@ -8,9 +8,8 @@
 [powershell中运行git](http://jingyan.baidu.com/article/d2b1d1029065ba5c7e37d43e.html?st=2&os=0&bd_page_type=1&net_type=2)
 
 
-## 配置
-
 ## 使用
+- 入门[教程](https://www.youtube.com/watch?v=8oRjP8yj2Wo)，当然是官方的好，简单明了。
 
 ## 体验
 
