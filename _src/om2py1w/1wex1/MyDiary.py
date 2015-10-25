@@ -1,20 +1,24 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python
+import time
 
+def GetTime():
+	#http://www.tutorialspoint.com/python/time_strftime.htm
+	formatter = '%A %b %d %Y %H:%M:%S'
+	return time.strftime(formatter)
 
 def ReadDiary():
 	f = open('MyDiary.txt','r')
-	print 5*'='+'Diary begins'+5*'='
-
-	for line in f:
-		print line,
+	print 5*'='+'Diary begins'+5*'='+'\n'
+	print f.read()
 	print 6*'='+'Diary ends'+6*'='+'\n'
-
 	f.close()
 
 def WriteDiary():
-	print "Anything want to share?"
+	print "少年，今天想吐槽什么？".decode('utf-8')
 	f = open('MyDiary.txt','a+')
+	t = GetTime()
+	f.write('\n'+t+'\n')
 
 	while True:
 		contents = raw_input(">>")
