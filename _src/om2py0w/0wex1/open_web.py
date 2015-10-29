@@ -1,4 +1,3 @@
 import webbrowser
-new = 2
 url = "http:\\www.baidu.com"
-webbrowser.open(url, new = new)
+webbrowser.open(url, new = 2)
