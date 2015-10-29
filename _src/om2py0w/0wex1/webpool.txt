@@ -1,0 +1,11 @@
+{
+"baidu":"http://www.baidu.com",
+"google":"https://www.google.com",
+"github":"https://github.com/lyltj2010?tab=repositories",
+"gitbook":"https://www.gitbook.com/book/yongle/-python-/details",
+"dashijian":"http://v.qq.com/detail/3/30406.html",
+"bizhan":"http://www.bilibili.com/",
+"howdy":"https://howdy.tamu.edu/cp/home/displaylogin",
+"zhimaxing":"http://www.iomooc.com/pages/login.html",
+"tutorials":"http://www.tutorialspoint.com/python/",
+}
