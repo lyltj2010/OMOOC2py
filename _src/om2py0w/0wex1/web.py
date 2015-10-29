@@ -23,7 +23,7 @@ def OpenWeb(website):
 	url = dic[website]
 	webbrowser.open(url, new = 2)
 
-if website=="update":
+if website=="add":
 	AddWeb()
 else:
 	OpenWeb(website)
