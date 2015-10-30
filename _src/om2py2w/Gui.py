@@ -1,40 +1,58 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python
 import Tkinter as tk
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Windows():
 
 	def __init__(self,master):
 		self.master = master
 		self.master.title('少年，吐槽时间到了！')
+		self.CreateWidget(self.master)
 
-		self.top_frame = tk.Frame(self.master)
-		self.name_label = tk.Label(self.top_frame,text='日记名称')
-		self.name_entry = tk.Entry(self.top_frame)
+	def CreateWidget(self,master):
+
+        #创建菜单
+		self.menu = tk.Menu(master)
+		self.master.config(menu=self.menu)
+
+		self.file_menu = tk.Menu(master)
+		self.menu.add_cascade(label='File',menu=self.file_menu)
+		self.file_menu.add_command(label='New',command=self.foo)
+		self.file_menu.add_command(label='Open',command=self.foo)
+		self.file_menu.add_command(label='Save',command=self.foo)
+		self.file_menu.add_separator()
+		self.file_menu.add_command(label='Exit',command=self.foo)
+
+		self.help_menu = tk.Menu(master)
+		self.menu.add_cascade(label='Help',menu=self.help_menu)
+		self.help_menu.add_command(label='Guide',command=self.foo)
+
+		self.top_frame = tk.Frame(master)
 		self.top_frame.pack()
-		self.name_label.grid(row=0,column=0)
-		self.name_entry.grid(row=0,column=1)
+		self.welcome_label = tk.Label(self.top_frame,text='Welcome to Diary World!')
+		self.welcome_label.pack()
 
-
-		self.middle_frame = tk.Frame(self.master)
-		self.content_label = tk.Label(self.middle_frame,text="内容")
-		self.content_text = tk.Text(self.middle_frame)
-		self.middle_frame.pack()
-		self.content_label.grid(row=0,column=0)
-		self.content_text.grid(row=0,column=1)
-
-		self.bottom_frame = tk.Frame(self.master)
-		self.menu_label_1 = tk.Button(self.bottom_frame,text="Save",bg='grey')
-		self.menu_label_2 = tk.Button(self.bottom_frame,text="Discard",bg='red')
-		self.menu_label_3 = tk.Button(self.bottom_frame,text="About",bg='grey')
+		#创建内容text窗口
+		self.bottom_frame = tk.Frame(master)
 		self.bottom_frame.pack()
-		self.menu_label_1.grid(row=0,column=0)
-		self.menu_label_2.grid(row=0,column=1)
-		self.menu_label_3.grid(row=0,column=2)
+
+		self.content_label = tk.Label(self.bottom_frame,text="内容")
+		self.content_label.pack(side='left')
+
+		self.scrollbar = tk.Scrollbar(self.bottom_frame)
+		self.scrollbar.pack(side='right',fill='y')
+		self.content = tk.Text(self.bottom_frame,yscrollcommand=self.scrollbar.set)
+		self.content.pack()
+		self.scrollbar.config(command=self.content.yview)
 
 	def foo():
 		pass
-		
+		return None
+
 
 def main():
 	root = tk.Tk()
