@@ -11,9 +11,9 @@ class Windows():
 	def __init__(self,master):
 		self.master = master
 		self.master.title('少年，吐槽时间到了！')
-		self.CreateWidget(self.master)
+		self.createWidget(self.master)
 
-	def CreateWidget(self,master):
+	def createWidget(self,master):
 
         #创建菜单
 		self.menu = tk.Menu(master)
@@ -29,7 +29,7 @@ class Windows():
 
 		self.help_menu = tk.Menu(master)
 		self.menu.add_cascade(label='Help',menu=self.help_menu)
-		self.help_menu.add_command(label='Guide',command=self.foo)
+		self.help_menu.add_command(label='Guide',command=self.readMe)
 
 		self.top_frame = tk.Frame(master)
 		self.top_frame.pack()
@@ -49,7 +49,11 @@ class Windows():
 		self.content.pack()
 		self.scrollbar.config(command=self.content.yview)
 
-	def foo():
+	def foo(self):
+		pass
+		return None
+
+	def readMe(self,master):
 		pass
 		return None
 
