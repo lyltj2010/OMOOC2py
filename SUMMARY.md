@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [0W:配置](0MOOC/README.md)
+* [W0:配置](0MOOC/README.md)
    * [CLI](0MOOC/CLI.md)
    * [python](0MOOC/py.md)
    * [Markdown](0MOOC/md.md)
@@ -11,13 +11,13 @@
    * [Disqus](0MOOC/DISQUS.md)
    
    
-* [1W:小小日记](2nDev/README.md)
+* [W1:小小日记](2nDev/README.md)
    * [折腾录](_src/om2py1w/折腾录.md)
 
-* [2W:日记GUI](2nDev/README.md)
+* [W2:日记GUI](2nDev/README.md)
    * [折腾录]()
 
-* [nW:闲来无事](private/README.md)
+* [Wn:闲来无事](private/README.md)
 
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
