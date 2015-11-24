@@ -9,7 +9,7 @@
    * [Github](0MOOC/github.md)
    * [Gitbook](0MOOC/gitbook.md)
    * [Disqus](0MOOC/DISQUS.md)
-* W1
+* [W1](README.md)
 * [Wn:闲来无事](private/README.md)
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
