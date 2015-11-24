@@ -11,6 +11,8 @@
    * [Disqus](0MOOC/DISQUS.md)
 * [W1基本款日记](_src/om2py1w/README.md)
    * [折腾录](_src/om2py1w/折腾录.md)
+* [W3日记Net版](_src/om2py3w/README.md)
+   * [折腾录](_src/om2py3w/note.md)
 * [W4网页版日记](_src/om2py4w/readme.md)
    * [折腾录](_src/om2py4w/note.md)
 * [Wn:闲来无事](private/README.md)
