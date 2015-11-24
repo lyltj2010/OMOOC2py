@@ -3,19 +3,30 @@
 
 from bottle import *
 
-@get('/diary')
-def diary():
+def readDiary():
 	f = open('diary.txt','r')
-	content = f.read()
+	text = f.read()
 	f.close()
-	return template('showdiary.tpl',content=content)
+	return text 
 
+def writeDiary(typein):
+	f = open('diary.txt','a+')
+	f.wirte(typein+'\n')
+	f.close()
+
+@route('/diary')
+def diary():
+	text = readDiary()
+	return template('showdiary.tpl',content=text)
+
+"""
 @get('/newdiary')
 def newDiary():
 	return '''
 		<form action="/newdiary" method="post">
 			Diary: <input name="content" type="text" />
-        </form>
+        </form>if __name__ == '__main__':
+        	main()
 		'''
 @post('/newdiary')
 def do_newDiary():
@@ -40,6 +51,7 @@ def do_login():
         return "<a href='http://localhost:8080/diary'>Click me.</a>"
     else:
         return "<p>Login failed.</p>"
+"""
 #error pages
 @error(404)
 def error404(error):
