@@ -4,54 +4,26 @@
 from bottle import *
 
 def readDiary():
-	f = open('diary.txt','r')
-	text = f.read()
-	f.close()
+	with open('diary.txt','r') as f:
+		text = f.read()
 	return text 
 
 def writeDiary(typein):
-	f = open('diary.txt','a+')
-	f.wirte(typein+'\n')
-	f.close()
+	with open('diary.txt','a+') as f:
+		f.write(typein+'\n')
 
 @route('/diary')
-def diary():
+def show():
 	text = readDiary()
 	return template('showdiary.tpl',content=text)
 
-"""
-@get('/newdiary')
-def newDiary():
-	return '''
-		<form action="/newdiary" method="post">
-			Diary: <input name="content" type="text" />
-        </form>if __name__ == '__main__':
-        	main()
-		'''
-@post('/newdiary')
-def do_newDiary():
-	content=request.forms.get('content')
-	return content
+@route('/diary',method='POST')
+def new():
+	typein=request.forms.get('typein')
+	writeDiary(typein)
+	text = readDiary()
+	return template('showdiary.tpl',content=text)
 
-@get('/login') # or @route('/login')
-def login():
-    return '''
-        <form action="/login" method="post">
-            Username: <input name="username" type="text" />
-            Password: <input name="password" type="password" />
-            <input value="Login" type="submit" />
-        </form>
-    '''
-
-@post('/login') # or @route('/login', method='POST')
-def do_login():
-    username = request.forms.get('username')
-    password = request.forms.get('password')
-    if username=='lyl' and password=='123':
-        return "<a href='http://localhost:8080/diary'>Click me.</a>"
-    else:
-        return "<p>Login failed.</p>"
-"""
 #error pages
 @error(404)
 def error404(error):
