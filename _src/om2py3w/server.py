@@ -2,19 +2,17 @@
 #!/usr/bin/env python
 from socket import *
 
-def history():
-	f = open('diary.txt','r')
-	diary = f.read()
-	f.close()
-	return diary
+def diary():
+	with open('diary.txt','r') as f:
+		content = f.read()
+	return content
 
 def write(data):
-	f = open('diary.txt','a+')
-	f.write(data+'\n')
-	f.close()
+	with open('diary.txt','a+') as f:
+		f.write(data+'\n')
 
 def help():
-	help_doc = ['Key in: ','"history" to diaplay past diary',\
+	help_doc = ['Key in: ','"diary" to diaplay past diary',\
 	'"help" to get guide','"" to write diary','"quit" to quit'\
 	'or type your diary directly.\n']
 
@@ -33,8 +31,8 @@ def main():
 		data, addr = s.recvfrom(1024)
 		print "Get connected by: %s" % str(addr)
 
-		if data == 'history':
-			reply = history()
+		if data == 'diary':
+			reply = diary()
 			s.sendto(reply,addr)
 		elif data == 'help':
 			reply = help()
