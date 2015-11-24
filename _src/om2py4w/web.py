@@ -12,6 +12,13 @@ def writeDiary(typein):
 	with open('diary.txt','a+') as f:
 		f.write(typein+'\n')
 
+def guide():
+
+	temp="Tpye in help or ? to get guide!\n"\
+			+"Type in anything else to write diary!\n"\
+			+"Submit to see What happened!" 
+	return temp
+
 @route('/diary')
 def show():
 	text = readDiary()
@@ -20,8 +27,11 @@ def show():
 @route('/diary',method='POST')
 def new():
 	typein=request.forms.get('typein')
-	writeDiary(typein)
-	text = readDiary()
+	if typein in ["help","?"]:
+		text=guide()
+	else:
+		writeDiary(typein)
+		text = readDiary()
 	return template('showdiary.tpl',content=text)
 
 #error pages
