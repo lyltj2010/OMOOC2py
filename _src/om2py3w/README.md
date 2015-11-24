@@ -1,7 +1,8 @@
-# OMOOC.py 周任务代码试作
-
-## 3w
-
-- 私人笔记:
-    + UDP 网络服务
-    + HTTP 服务端
+##Guide
+1. 本地运行server.py(放到工作路径下)
+2. 运行client.py  
+**Help**  
+"diary" to diaplay past diary  
+"help" to get guide.  
+"quit" to quit.  
+anything else to write diary.
