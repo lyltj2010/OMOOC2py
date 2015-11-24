@@ -1,8 +1,4 @@
-# OMOOC.py 周任务代码试作
-
-## 4w
-
-- 私人笔记:
-    + SAE 发布服务
-    + web 页面端口
-    + 用户认证
+##Guide
+- 把web.py diary.txt and showdiary.tpl放到工作目录
+- 运行web.py
+- 访问localhost:8080/diary即可交互写日记
