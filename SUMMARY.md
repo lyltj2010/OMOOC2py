@@ -14,9 +14,6 @@
 * [W1:小小日记](2nDev/README.md)
    * [折腾录](_src/om2py1w/折腾录.md)
 
-* [W2:网页版日记](2nDev/README.md)
-   * [折腾录](_src/om2py4w/note.md)
-
 
 * [Wn:闲来无事](private/README.md)
 
