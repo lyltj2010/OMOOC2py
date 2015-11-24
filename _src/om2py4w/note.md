@@ -26,6 +26,7 @@ def diary():
 ```
 - template是什么鬼，需要html语言基本知识  
 [十分钟入门](http://www.w3schools.com/html/default.asp)
+
 ```python
 <head>
   <title>This is my diary website.</title>
@@ -49,6 +50,7 @@ Lol.</p></pre>
 
 </body>
 ```
+
 - wonder够了，进入post，writediary  
 关键是post，form的用法，实现用户通过网页与server交互。
 ```python
@@ -70,7 +72,7 @@ def new():
 	return template('showdiary.tpl',content=text)
 ```
 ####debug
-中间有bug，发现后笑哭。POST时，tpl里面form已经写好，但是request.forms.get()就是写不到本地文件，出错，file object没有wirte属性。从request排查，用type(typein)和print typein都没发现问题，必然是写入的问题，然后发现是writeDiary函数里f.write写成f.wirte了，typo啊！
+中间有bug，发现后笑哭。POST时，tpl里面form已经写好，但是request.forms.get()就是写不到本地文件，出错，file object没有wirte属性。从request排查，用type(typein)和print typein都没发现问题，必然是写入的问题，然后发现是writeDiary函数里f.write写成f.wirte了，**typo啊**！
 
 ####吐槽自己
-大妈告诉你不要憋大招。。。你看看你憋的落下两周课程有木有。让MVP持续rolling就行，算了，原谅你这一次。继续下周！
+大妈**告诉你不要憋大招**。。。你看看你憋的落下两周课程有木有。让MVP持续rolling就行，算了，原谅你这一次。继续下周！
