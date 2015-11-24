@@ -9,11 +9,6 @@
    * [Github](0MOOC/github.md)
    * [Gitbook](0MOOC/gitbook.md)
    * [Disqus](0MOOC/DISQUS.md)
-   
-
-* [W1:基本款日记](README.md)
-   * [探索笔记](_src/om2py1w/折腾录.md)
-   * 
 
 
 * [Wn:闲来无事](private/README.md)
