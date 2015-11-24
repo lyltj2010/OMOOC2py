@@ -10,7 +10,7 @@
    * [Gitbook](0MOOC/gitbook.md)
    * [Disqus](0MOOC/DISQUS.md)
 * [W1](_src/om2py1w/README.md)
-   * 折腾录
+   * [折腾录](_src/om2py1w/折腾录.md)
 * [Wn:闲来无事](private/README.md)
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
