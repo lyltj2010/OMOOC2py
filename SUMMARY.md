@@ -15,7 +15,7 @@
    * [折腾录](_src/om2py3w/note.md)
 * [W4网页版日记](_src/om2py4w/readme.md)
    * [折腾录](_src/om2py4w/note.md)
-* [W5日记PaaS版](_src/om2py5w/readme.md)
+* [W5日记PaaS版](_src/om2py5w/README.md)
    * [折腾录](_src/om2py5w/note.md)
 * [Wn:闲来无事](private/README.md)
 * [素材 (draft)](draft/README.md)
