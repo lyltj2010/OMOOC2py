@@ -13,7 +13,7 @@
    * [折腾录](_src/om2py1w/折腾录.md)
 * [W3日记Net版](_src/om2py3w/README.md)
    * [折腾录](_src/om2py3w/note.md)
-* [W4网页版日记](_src/om2py4w/README.md)
+* [W4网页版日记](_src/om2py4w/readme.md)
    * [折腾录](_src/om2py4w/note.md)
 * [W5日记PaaS版](_src/om2py5w/readme.md)
    * [折腾录](_src/om2py5w/note.md)
