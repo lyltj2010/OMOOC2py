@@ -18,7 +18,7 @@
 * [W5日记PaaS版](_src/om2py5w/README.md)
    * [折腾录](_src/om2py5w/note.md)
 * [Wn:闲来无事](private/README.md)
-   * [CLI操纵浏览器](private/web/note.md)
+   * [CLI操纵浏览器](private/web/readme.md)
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
 
