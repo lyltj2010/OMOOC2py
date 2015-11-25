@@ -19,6 +19,8 @@
    * [折腾录](_src/om2py5w/note.md)
 * [Wn:闲来无事](private/README.md)
    * [CLI操纵浏览器](private/web/readme.md)
+       * [开发日志](private/web/note.md)
+       * [代码](private/web/w.py)
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
 
