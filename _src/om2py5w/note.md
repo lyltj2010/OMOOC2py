@@ -25,4 +25,7 @@
 1、```pip install sae-python-dev```  
 2、进入开发目录(index.wsg和config.yaml所在处),运行```dev_server.py```  
 3、访问http://localhost:8080即可  
-4、部署```more config.yaml```(查看配置信息) ```saecloud deploy```(接受可选参数，应用代码目录)   
+####部署
+1、部署```more config.yaml```(查看配置信息) ```saecloud deploy```(接受可选参数，应用代码目录)   
+2、接口好像弄个```app=Bottle()```就ok了，嗯，再看看同侪的代码，学习一下去。  
+3、so far so good.
