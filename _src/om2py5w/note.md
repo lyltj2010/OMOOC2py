@@ -17,6 +17,12 @@
 
 1、[helloworld](http://www.sinacloud.com/doc/sae/python/tutorial.html#id2)  
 2、发现需要svn  
-3、[使劲戳这安装svn](http://www.cnblogs.com/armyfai/p/3985660.html)  
-4、嗯，quickstart了，不过cmd需要从svn打开才管用，不知道为啥。
-
+3、[使劲戳这安装svn](http://www.cnblogs.com/armyfai/p/3985660.html)    
+4、嗯，quickstart了，不过cmd需要从svn打开才管用，不知道为啥。  
+5、后来发现好像不需要...
+####本地测试
+[答案在这](http://www.sinacloud.com/doc/sae/python/tools.html)，sae文档理应有这些基本guide。  
+1、```pip install sae-python-dev```  
+2、进入开发目录(index.wsg和config.yaml所在处),运行```dev_server.py```  
+3、访问http://localhost:8080即可  
+4、部署```more config.yaml```(查看配置信息) ```saecloud deploy```(接受可选参数，应用代码目录)   
