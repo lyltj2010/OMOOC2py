@@ -2,21 +2,24 @@
 #!/usr/bin/env python
 from bottle import *
 import sae
+import sae.kvdb
 
 app = Bottle()
-'''
-@app.route('/')
-def hello():
-	return "Hey, dude!"
-'''
-def readDiary():
-	with open('diary.txt','r') as f:
-		text = f.read()
-	return text 
+kv = sae.kvdb.Client()
 
-def writeDiary(typein):
-	with open('diary.txt','a+') as f:
-		f.write(typein+'\n')
+def readDiary():
+	
+	text = []
+	for i in kv.get_by_prefix('key:'):
+		# here i is tuple access by index
+		text.append(i[1]["content"])
+	return '\n'.join(text)
+
+def writeDiary(content,tag):
+	diary = {"content":content,"tag":tag}
+	# diary includes content and tag
+	# (dict) access by key
+	kv.set('key:'+tag, diary)
 
 def guide():
 
@@ -33,13 +36,15 @@ def show():
 @app.route('/',method='POST')
 def new():
 	typein=request.forms.get('typein')
+	tag=request.forms.get('tag')
 	if typein in ["help","?"]:
 		text=guide()
 	else:
-		writeDiary(typein)
+		writeDiary(typein,tag)
 		text = readDiary()
 	return template('showdiary.tpl',content=text)
 
+#error pages
 @app.error(404)
 def error404(error):
 	return "Nothing here, sorry!"
