@@ -60,7 +60,7 @@ Tag&nbsp<input type="text" style="width:100px" name="tag"/>&nbsp
 
 <div id="footer">
 <a href="https://github.com/lyltj2010?tab=repositories" target="_blank">Github</a>&nbsp
-<a href="https://www.gitbook.com/@yongle/dashboard" target="_blank">Gitbook</a>
+<a href="https://yongle.gitbooks.io/-python-/content/" target="_blank">Gitbook</a>
 </div>
 
 
