@@ -35,7 +35,8 @@ def guide():
 
 	temp="Tpye in help or ? to get guide!\n"\
 			+"Type in anything else to write diary!\n"\
-			+"Submit to see What happened!" 
+			+"Submit to see What happened!\n"\
+			+"Type in del or delete to clear all diary.(DO NOT PLEASE!)"
 	return temp
 
 @app.route('/')
