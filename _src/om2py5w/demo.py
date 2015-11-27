@@ -25,11 +25,18 @@ def writeDiary(content,tag):
 	# (dict) access by key
 	kv.set('key:'+tag, diary)
 
+def deleteDiary():
+	keys = kv.getkeys_by_prefix('key:')
+	for i in keys:
+		kv.delete(i)
+	return "All diary cleared!"
+
 def guide():
 
 	temp="Tpye in help or ? to get guide!\n"\
 			+"Type in anything else to write diary!\n"\
-			+"Submit to see What happened!" 
+			+"Submit to see What happened!\n"\
+			+"Type in del or delete to clear all diary.(DO NOT PLEASE!)"
 	return temp
 
 @app.route('/')
@@ -40,23 +47,19 @@ def show():
 @app.route('/',method='POST')
 def new():
 	typein=request.forms.get('typein')
-	tag=request.forms.get('tag')
+	tag=request.forms.get('tag').replace(' ','')
 	if typein in ["help","?"]:
-		text=guide()
+		text = guide()
+	elif typein in ["delete","del"]:
+		text = deleteDiary()
 	else:
 		writeDiary(typein,tag)
 		text = readDiary()
-	return template('showdiary.tpl',content=text)
+	return template('showdiary1.tpl',content=text)
 
 #error pages
 @app.error(404)
 def error404(error):
 	return "Nothing here, sorry!"
-
-'''
-if __name__ == "__main__":
-    debug(True)
-    run(host='localhost',port=8080,reloader=True)
-'''
 
 application = sae.create_wsgi_app(app)
