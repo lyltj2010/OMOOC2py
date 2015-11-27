@@ -1,5 +1,6 @@
 ##Guide
 - 用途：CLI打开浏览器;管理网址收藏夹;google搜索.
+
 ####用法
 - w.py与webpool置于工作目录
 - CLI输入"w.py keyword"
