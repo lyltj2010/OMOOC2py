@@ -13,14 +13,18 @@
 Lol.</p></pre>
 
 <form action="/" method="post">
-Write diary here:<br>
-	<input type="text" style="width:300px; height:35px" name="typein"/>
+Diary:
+	<input type="text" style="width:300px " name="typein"/>
+Tag:
+	<input type="text" style="width:80px" name="tag"/>
 	<input type="submit" value="Submit"/>
 </form>
 
-<p>以下是往期日记：<hr>
+<p>以下是以往日志：<hr>
 <pre>
-<textarea rows="40" cols="120">{{content}}</textarea>
+<textarea rows="40" cols="120">
+{{content}}
+</textarea>
 </pre>
 </p>
 
