@@ -25,6 +25,12 @@ def writeDiary(content,tag):
 	# (dict) access by key
 	kv.set('key:'+tag, diary)
 
+def deleteDiary():
+	keys = kv.getkeys_by_prefix('key:')
+	for i in keys:
+		kv.delete(i)
+	return "All diary cleared!"
+
 def guide():
 
 	temp="Tpye in help or ? to get guide!\n"\
@@ -42,7 +48,9 @@ def new():
 	typein=request.forms.get('typein')
 	tag=request.forms.get('tag').replace(' ','')
 	if typein in ["help","?"]:
-		text=guide()
+		text = guide()
+	elif typein in ["delete","del"]:
+		text = deleteDiary()
 	else:
 		writeDiary(typein,tag)
 		text = readDiary()
