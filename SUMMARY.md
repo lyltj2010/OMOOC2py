@@ -17,6 +17,8 @@
    * [折腾录](_src/om2py4w/note.md)
 * [W5日记PaaS版](_src/om2py5w/README.md)
    * [折腾录](_src/om2py5w/note.md)
+* [W6日记移动版](_src/om2py6w/README.md)
+   * [折腾录](_src/om2py6w/note.md)
 * [Wn:闲来无事](private/README.md)
    * [CLI操纵浏览器](private/web/readme.md)
        * [开发日志](private/web/note.md)
