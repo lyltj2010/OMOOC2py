@@ -9,11 +9,15 @@ kv = sae.kvdb.Client()
 
 def readDiary():
 	
-	text = []
+	text = []; tag = []
 	for i in kv.get_by_prefix('key:'):
 		# here i is tuple access by index
 		text.append(i[1]["content"])
-	return '\n'.join(text)
+		tag.append(i[1]["tag"])
+	log = []
+	for j in range(len(text)):
+		log.append('Diary: '+text[j]+'\n'+'Tag: '+tag[j])
+	return '\n'.join(log)
 
 def writeDiary(content,tag):
 	diary = {"content":content,"tag":tag}
