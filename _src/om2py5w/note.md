@@ -34,3 +34,8 @@
 发现竟然还是用本地txt做数据库，Lol.  
 用kvdb创建数据解决之。  
 赶紧下周吧，课程都要结束了，下周也要final了，加油！
+
+
+####美化网站
+网站太丑了，看着很不舒服。  
+- [Html Layouts基础](http://www.w3schools.com/html/html_layout.asp)
