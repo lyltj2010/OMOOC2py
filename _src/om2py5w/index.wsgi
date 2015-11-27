@@ -55,7 +55,7 @@ def new():
 	else:
 		writeDiary(typein,tag)
 		text = readDiary()
-	return template('showdiary.tpl',content=text)
+	return template('showdiary1.tpl',content=text)
 
 #error pages
 @app.error(404)
