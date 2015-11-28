@@ -57,6 +57,22 @@ def new():
 		text = readDiary()
 	return template('showdiary.tpl',content=text)
 
+@app.route('/wechat')
+def checkSignature():
+	token = "lyltj2010"
+	timestamp =request.GET.get('timestamp',None)
+	nonce = request.GET.get('nonce',None)
+	signature = request.GET.get('signature',None)
+	echostr = request.GET.get('echostr',None)
+	mylist = sorted([token,timestamp,nonce])
+	mystr = ''.join(mylist)
+	
+	import hashlib
+	password = hashlib.sha1(mystr).hexdigest()
+	if password == signature:
+		return echostr
+	else:
+		return None
 #error pages
 @app.error(404)
 def error404(error):
