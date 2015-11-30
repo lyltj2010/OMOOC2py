@@ -23,6 +23,7 @@
    * [CLI操纵浏览器](private/web/readme.md)
        * [开发日志](private/web/note.md)
        * [代码](private/web/code.md)
+   * [词频统计](private/cipin/note.md)
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
 
