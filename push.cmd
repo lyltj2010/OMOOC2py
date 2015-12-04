@@ -1,5 +1,6 @@
+@echo off
+SET /p comment=Enter commit please: 
 git pull
-git status
 git add -A
-git commit -m "%*"
+git commit -m "%comment%"
 git push
