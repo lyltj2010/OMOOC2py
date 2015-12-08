@@ -31,3 +31,4 @@ def checkSignature():
 	else:
 		return None
 ```
+结果证明是这样的。
