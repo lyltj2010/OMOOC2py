@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [W0:配置](0MOOC/README.md)
-   * [CLI](0MOOC/CLI.md)
+* [字典遍历](cheat/md/loop_dict.md)
 
 
