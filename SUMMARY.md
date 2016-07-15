@@ -8,3 +8,4 @@
 * [os模块实例详解](cheat/md/os.md)
 * [re模块实例详解](cheat/md/re.md)
 * [文件操作](cheat/md/file.md)
+* [zipfile解压缩](cheat/md/zip.md)
