@@ -1,12 +1,6 @@
 
 ### Logging 模块
 
-- data, object type
-- print to terminal
-- write to log.txt
-- different level?
-
-
 ```python
 import logging
 ```
