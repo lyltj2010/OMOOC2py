@@ -51,7 +51,7 @@ os.chdir('img')
 print os.getcwd()
 
 # go back up
-os.chdir(os.pardir) #or simply os.chdir('..)
+os.chdir(os.pardir) #or simply os.chdir('..')
 print os.getcwd()
 ```
 
