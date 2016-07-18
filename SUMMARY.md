@@ -10,3 +10,4 @@
 * [文件操作](cheat/md/file.md)
 * [zipfile解压缩](cheat/md/zip.md)
 * [logging模块](cheat/md/logging.md)
+* [glob模块](cheat/md/glob.md)
